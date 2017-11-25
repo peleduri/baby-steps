@@ -1,0 +1,15 @@
+#copy the file with diffrent name add to it additional variables of
+#lname, ID, DOB(date of birth), COB(country of birth) and later print them to standard output.
+
+
+#!/bin/bash
+#ask the user for input
+read -p "Enter your First name: " fname
+read -p "Enter your Last name: " lname
+read -p "Enter your DOB: " DOB
+read -p "Enter your COB: " COB
+sleep 2
+echo First Name saved: $fname
+echo Last  Name saved: $lname
+echo date of birth saved: $DOB
+echo country of birth saved: $COB
