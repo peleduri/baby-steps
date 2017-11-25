@@ -1,0 +1,25 @@
+#5.2 run the file again but this time redirect its output in to tmp file in /tmp directory.
+#5. create a file that will run "mkdir" with parenthood to folder that is named after you. after it is created change your location in to it.
+
+
+#!/bin/bash
+
+#Author: uripld
+
+#move to Downloads dir
+cd "$HOME/Downloads"
+
+#ask the user for input 
+read -p "Enter dir name: " dirname
+
+#create dir with your name
+mkdir $dirname
+
+read -p "Enter file name: " filename
+cd $dirname
+touch $filename
+
+#move the file to other location
+mv "$filename" "/tmp/" 
+
+echo "the file \'$filename\' is now at your tmp directory"
