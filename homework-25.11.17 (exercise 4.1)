@@ -1,0 +1,15 @@
+#copy the file with diffrent name add to it additional variables of : lname, ID, DOB(date of birth), COB(country of birth) and later print them to standard output.
+#4.1 run the file wiht bash command, but redirect its output  to tmp file in your home folder.
+
+#!/bin/bash
+#ask the user for input
+read -p "Enter your First name: " fname
+read -p "Enter your Last name: " lname
+read -p "Enter your DOB: " DOB
+read -p "Enter your COB: " COB
+sleep 2
+echo $(date) : $fname, $lname, $DOB, $COB >> ~/personalinfo.txt
+echo First Name saved: $fname
+echo Last  Name saved: $lname
+echo date of birth saved: $DOB
+echo country of birth saved: $COB
