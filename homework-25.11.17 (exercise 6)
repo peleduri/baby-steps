@@ -1,0 +1,16 @@
+#6. create a file that runs "find" commands and seeks all the files with "tmp" in its name.
+
+
+#!/bin/bash
+
+#Author: uripld
+
+#move to HOME dir
+cd "$HOME/"
+
+#lets create a file with "tmp" in its name - so we will find something :)
+touch firstmpfile
+
+#lets create a file who will find the tmp file
+find $HOME/ -name "tmp"
+
