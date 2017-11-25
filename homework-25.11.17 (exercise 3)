@@ -1,0 +1,7 @@
+#create a file that will hold variable "name" with value of you first name, 
+#after that run sleep command for 4 seconds and print it to standard output.
+#!/bin/bash
+#ask the user for input
+read -p "Enter your name: " name
+sleep 4
+echo Name saved: $name
