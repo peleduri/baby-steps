@@ -2,7 +2,7 @@
 
 #learning loops:)
 
-for i in (seq 0 20)
+for i in $(seq 0 20)
 do
     echo $i;sleep 0.5
 
