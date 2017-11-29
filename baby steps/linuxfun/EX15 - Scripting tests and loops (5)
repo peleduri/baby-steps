@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+#Ex15:scripting tests and loops
+#5 Write a script that counts the number of files ending in .txt in the current directory
+
+x=0
+   for i in $(ls *.txt)
+   do
+    echo $i
+    (( x++ ))
+
+    done
+
+    echo $x
+
+exit 0
