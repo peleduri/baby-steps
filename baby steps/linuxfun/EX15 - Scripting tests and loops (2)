@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+#Ex15:scripting tests and loops
+#2 Write a script that uses a for loop to count from 1 to 17000
+
+echo "____________"
+echo "Bash will count from 1 to 17000..."
+echo "____________"
+
+
+for i in {1..17000}
+  do 
+     echo "This is $i ";sleep 0.5
+ done
