@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+#Ex15:scripting tests and loops
+#3 Write a script that uses a while loop to count from 3 to 7
+
+  COUNTER=3
+         while [  $COUNTER -lt 8 ]; do
+             echo The counter is $COUNTER
+             let COUNTER=COUNTER+1 
+        
+         done
