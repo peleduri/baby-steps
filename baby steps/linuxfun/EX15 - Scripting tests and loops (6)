@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+#Ex15:scripting tests and loops
+#6 Wrap an if statment around the script so it is also correct when there are zero files ending in .txt.
+
+x=0
+var=$(ls *.txt)
+if [ ! -z "$var" ];
+then 
+   for i in $var
+   do
+    echo $i
+    (( x++ ))
+
+    done
+
+    echo $x
+
+else
+    echo "NO text files found"
+
+fi
+exit 0
