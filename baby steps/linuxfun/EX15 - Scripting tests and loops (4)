@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+#Ex15:scripting tests and loops
+#4 Write a script that uses a while loop to count from 3 to 7
+
+    UNTIL=8
+         until [  $UNTIL -eq 4 ]; do
+             echo The counter is $UNTIL
+             let UNTIL=UNTIL-1 
+        
+         done
