@@ -1,0 +1,16 @@
+#!/bin/bash
+# just for practice read -a array
+
+read -a array
+
+echo "this is length of the array " ${#array[@]}
+echo "this is length of the element " ${#array[3]}
+echo "this is data in 4th element " ${array[3]}
+echo "this is how we get data from 2nd element till the 4th element " $array[@]:1:4}
+
+echo "this is how we itetate the array with for loop:"
+
+for i in "${array[@]}"
+do
+   echo "i am at element $i "
+done
